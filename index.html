@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="device-width initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <!-- Body section -->
+  <body>
+    <!-- Header -->
+    <main>
+    <header>
+      <h1 id="title">IT SURVEY FORM</h1>
+      <p id="description">
+        Navigating tech landscape - insights and preferences
+      </p>
+    </header>
+
+    <!-- Main -->
+      <form id="survey-form" action="#" method="post">
+        <!-- Name -->
+        <div class="form-group name-input">
+          <label id="name-label" for="name"
+            >Name
+            <input
+              id="name"
+              type="text"
+              name="name"
+              placeholder="eg. John Doe"
+              required
+          /></label>
+        </div>
+
+          <!-- Email -->
+        <div class="form-group email-input">
+          <label id="email-label" for="email">Email
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="eg. john@example.com"
+              required
+          /></label>
+        </div>
+
+          <!-- Year of Experience -->
+        <div class="form-group year-of-experience-input">
+          <label id="number-label" for="Years of Experience"
+            >Years of Experience in IT field (years)
+            <input
+            id="number" type="number" name="years-of-experience" min="0" max="100"
+            placeholder="Years of experience in numbers"
+          /></label>
+        </div>
+
+          <!-- Current Technology Domain -->
+        <div class="form-group dropdown">
+          <label for="dropdown"
+            ><span id="dropdown-label">Current Technology Domain:</span>
+            <select id="dropdown">
+              <option name="select-current-domain" value="1"><small>Select Current Domain</small></option>
+              <option name="web-development" value="1">Web development</option>
+              <option name="app-development" value="2">App Development</option>
+              <option name="software-development" value="3">Software Development</option>
+              <option name="data-science" value="4">Data Science</option>
+              <option name="artificial-intelligence" value="5">
+                Artificial Intelligence
+              </option>
+              <option name="6" value="other">Other</option>
+            </select>
+          </label>
+        </div>
+
+        <!-- Radio Button (Beginner Programming Suggestion) -->
+        <div class="form-group programming-language">
+          <label class="label-header">
+            Best Programming Language for beginners (in your opinion)
+          </label>
+          <label
+            ><input
+              type="radio"
+              id="python"
+              name="beginner-Programming"
+              value="python"
+              class="inline"
+              checked
+            />Python
+          </label>
+          <label
+            ><input
+              type="radio"
+              id="javascript"
+              name="beginner-Programming"
+              value="javascript"
+              class="inline"
+            />Javascript</label
+          >
+          <label
+            ><input
+              type="radio"
+              id="c++"
+              name="beginner-Programming"
+              value="c++"
+              class="inline"
+            />C++</label
+          >
+          <label
+            ><input
+              type="radio"
+              id="java"
+              name="beginner-Programming"
+              value="java"
+              class="inline"
+            />Java</label
+          >
+          <label
+            ><input
+              type="radio"
+              id="others"
+              name="beginner-Programming"
+              value="other"
+              class="inline"
+            />Other</label
+          >
+        </div>
+
+<!-- Preferred Code Editor -->
+        <div class="form-group preffered-code-editor">
+          <label class="label-header">Preffered Code Editor</label>
+          <label for="Visual-studio-code"><input type="checkbox" name="Visual-studio-code" value="Visual-studio-code" class="inline" checked />Visual Studio Code</label>
+          <label for="atom"><input type="checkbox" name="atom" value="atom" class="inline"/>Atom</label>
+          <label for="sublime-text" ><input type="checkbox" name="sublime-text" value="sublime-text" class="inline"/>Sublime Text</label>
+          <label for="intellij-idea"><input type="checkbox" name="intellij-idea" value="intellij-idea" class="inline"/>Intellij-IDEA</label>
+          <label for="others"><input type="checkbox" name="other" value="-code-editor-other" class="inline"/>Other</label>
+        </div>
+        
+        <!-- Coding Practice -->
+        <div class="form-group preffered-coding-platform">
+          <label class="label-header">Preffered Platform For Coding Practice</label>
+          <label for="leetcode"><input type="checkbox" name="leetcode" value="leetcode" class="inline" checked/>Leetcode</label>
+          <label for="hackerrank"></label><input type="checkbox" name="hackerrank" value="hackerrank" class="inline" />Hacker Rank</label>
+          <label for="geeksforgeeks"></label><input type="checkbox" name="geeksforgeeks" value="geeksforgeeks" class="inline" />Geeks For Geeks</label>
+          <label for="other"><input type="checkbox" name="other" value="coding-platform-other" class="inline" />Other</label>
+        </div>
+
+        <!-- Text area -->
+        <div class="form-group coding-tips-textarea">
+          <label class="label-header">How to learn coding faster?</label>
+          <textarea cols="30" rows="6" placeholder="write your tips here..."></textarea>
+        </div>
+
+        <!-- Submit input -->
+        <input type="submit" name="submit" id="submit" value="Submit" />
+      </form>
+    </main>
+  </body>
+</html>    

@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #06071e;
+  line-height: 1.5;
+  background-image: radial-gradient(#128fd2, #4548c4);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+h1,
+p {
+  text-align: center;
+  color: #fefbfb;
+  text-shadow: #0a0a23 0.1em 0.1em 0.2em;
+}
+
+#title {
+  padding: 30px;
+  background-size: 200% auto;
+}
+
+header p {
+  margin: -25px 0 10px 0;
+}
+
+form {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2em;
+  min-width: 400px;
+  max-width: 600px;
+  border: 1px solid #333;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 0 10px #333;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+select,
+textarea {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+  border: 1px solid #0a0a23;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+select {
+  background-color: white;
+  color: #0a0a23;
+  border: 2px solid white;
+  appearance: none;
+  -webkit-appearance: none;
+  -mox-appearance: none;
+  cursor: pointer;
+}
+
+select option {
+  background: #0a0a23;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: #02023b;
+}
+
+.label-header,
+#name-label,
+#email-label,
+#number-label,
+#dropdown-label {
+  margin: 0.5rem 0;
+  font-size: 20px;
+  font-weight: 600;
+  background: linear-gradient(
+    90deg,
+    #dfedf5 20%,
+    #c5c5dd 40%,
+    #dfedf5 60%,
+    #9e9fcd 80%,
+    #dfedf5 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+textarea {
+  border-radius: 10px;
+  padding: 10px;
+  color: #0a0a23;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"] {
+  -webkit-text-fill-color: #0a0a23;
+}
+
+
+input::placeholder {
+  color: gray;
+  font-style: italic;
+  font-size: 0.9rem;
+  opacity: 0.5;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea {
+  outline: 1px solid #f2f2f9;
+  outline-offset: 2px;
+}
+
+input[type="submit"] {
+  /* -webkit-text-fill-color: unset; */
+  
+  display: block;
+  width: 100%;
+  height: 2em;
+  font-size: 1.1rem;
+  background: #00001c; /* Dark background */
+  border: 2px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  min-width: 300px;
+  padding: 5px 10px;
+  color: white;
+
+  /* Shiny effect using linear gradient */
+  /* background: linear-gradient(90deg, #00001c 25%,  #00001c 75%); */
+  /* background-size: 150% auto; */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  /* animation: shine 5s linear infinite; */
+}
+
+/* Animation to create the shiny effect */
+/* @keyframes shine {
+  0% {
+    background-position: -150% 0;
+  }
+  100% {
+    background-position: 150% 0;
+  }
+} */
+
+/* Hover button state */
+input[type="submit"]:hover {
+  background: rgb(228, 226, 238); /* Light background on hover */
+  border-color: #0a0a23;
+  transform: scaleX(0.95);
+  transition: all 0.1s ease-in-out;
+  color: #0a0a23; /* Dark text color on hover */
+  border-color: #0a0a23; /* Match border with text */
+
+  /* Adding shine to the hover state */
+}
