@@ -6,6 +6,7 @@ This project collects insights and preferences from users in the IT field, inclu
 ---
 
 ## 📌 Features
+
 - Responsive **HTML form** with CSS styling.
 - Input fields for **Name**, **Email**, and **Years of Experience**.
 - Dropdown for **Current Technology Domain**.
@@ -17,32 +18,35 @@ This project collects insights and preferences from users in the IT field, inclu
 ---
 
 ## 📂 Project Structure
+
 survey-form/
 │── index.html # Main HTML file
 │── styles.css # CSS file for styling
 └── README.md # Documentation
 
-
 ---
 
 ## 🚀 How to Run
+
 1. Clone this repository:
+
    ```bash
    git clone https://github.com/SalaitSudhakar/survey-form.git
+
+   ```
 
 2. Navigate into the project folder
    ```bash
    cd survey-form
+   ```
 
 ---
 
 ## 🎨 screenshot/preview
 
-
 ---
 
 ## 🛠️ Technologies Used
+
 - HTML
 - CSS
-
-
