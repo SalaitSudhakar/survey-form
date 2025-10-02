@@ -43,7 +43,7 @@ form {
   width: 90%;
   margin: 0 auto;
   padding: 2em;
-  min-width: 400px;
+  min-width: 300px;
   max-width: 600px;
   border: 1px solid #333;
   border-top-left-radius: 10px;
@@ -138,7 +138,6 @@ input[type="password"] {
   -webkit-text-fill-color: #0a0a23;
 }
 
-
 input::placeholder {
   color: gray;
   font-style: italic;
@@ -157,7 +156,7 @@ textarea {
 
 input[type="submit"] {
   /* -webkit-text-fill-color: unset; */
-  
+
   display: block;
   width: 100%;
   height: 2em;
@@ -200,4 +199,22 @@ input[type="submit"]:hover {
   border-color: #0a0a23; /* Match border with text */
 
   /* Adding shine to the hover state */
+}
+
+@media screen and (max-width: 380px) {
+  form {
+    width: 90%;
+    max-width: 375px;
+    padding: 1rem;
+    border: 0;
+    box-shadow: none;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    height: 2em;
+    min-width: 250px;
+    padding: 4px 8px;
+    
+  }
 }
